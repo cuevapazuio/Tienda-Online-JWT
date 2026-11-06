@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #dfe5ef;
+    padding: 22px 8%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 6px 0 0;
+    color: #667085;
+}
+
+main {
+    width: 84%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+.auth-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e1e6ef;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 28px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccd5e2;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #2563eb;
+    border-color: transparent;
+}
+
+button {
+    border: 0;
+    background: #2563eb;
+    color: white;
+    padding: 11px 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.secundario {
+    background: white;
+    color: #172033;
+    border: 1px solid #ccd5e2;
+}
+
+.peligro {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.acciones {
+    display: flex;
+    gap: 10px;
+}
+
+.sesion {
+    background: white;
+    border: 1px solid #e1e6ef;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sesion button {
+    margin: 0;
+}
+
+.titulo-listado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.titulo-listado h2 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.titulo-listado button {
+    margin: 0;
+}
+
+.etiqueta {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(240px, 1fr)
+    );
+    gap: 18px;
+}
+
+.producto {
+    background: white;
+    border: 1px solid #e1e6ef;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.producto h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.descripcion {
+    color: #667085;
+    min-height: 38px;
+}
+
+.precio {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stock {
+    color: #667085;
+}
+
+.botones {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.botones button {
+    flex: 1;
+    padding: 9px;
+}
+
+.mensaje {
+    color: #667085;
+    grid-column: 1 / -1;
+}
+
+.error {
+    color: #b91c1c;
+}
+
+.exito {
+    color: #15803d;
+}
+
+.oculto {
+    display: none;
+}
+
+@media (max-width: 700px) {
+
+    main {
+        width: 92%;
+    }
+
+    .auth-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fila {
+        grid-template-columns: 1fr;
+    }
+}
